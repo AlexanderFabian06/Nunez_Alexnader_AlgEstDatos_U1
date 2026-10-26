@@ -1,8 +1,7 @@
 #pila.py - Pila (stack) implementada con nodos enlazados.
 
 class NodoPila:
-    """Nodo de la pila: guarda un dato y la referencia al nodo inferior."""
-
+    #Nodo de la pila: guarda un dato y la referencia al nodo inferior
     def __init__(self, dato):
         self.dato = dato
         self.siguiente = None
@@ -52,7 +51,7 @@ class Pila:
 
 
 def probar():
-    """Caso de prueba de la pila (comportamiento LIFO)."""
+    #Caso de prueba de la pila
     pila = Pila()
     assert pila.esta_vacia()
     pila.push("registrar 111")
